@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Smart UMKM</string>
+    <string name="tagline">Change the way you live in the future</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login_desc">Hello, welcome back\nto our account</string>
+    <string name="login_title">Login Account</string>
+    <string name="create_account">Create Account</string>
+</resources>
