@@ -12,6 +12,10 @@ class SmartLabaActivity : AppCompatActivity() {
         binding = ActivitySmartLabaBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
+        binding.imgBack.setOnClickListener {
+            finish()
+        }
+
     }
 
     override fun onStart() {

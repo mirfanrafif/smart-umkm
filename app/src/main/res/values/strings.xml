@@ -14,4 +14,6 @@
     <string name="tahunan">Tahunan</string>
     <string name="smart_laba">Smart Laba</string>
     <string name="pemasukan">Pemasukan</string>
+    <string name="pengeluaran">Pengeluaran</string>
+    <string name="more">More</string>
 </resources>
