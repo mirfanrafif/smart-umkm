@@ -5,7 +5,6 @@ import com.mirfanrafif.smartumkm.core.datasource.local.entity.User
 import javax.inject.Inject
 import javax.inject.Singleton
 
-@Singleton
 class UserRepository @Inject constructor (private val local: UserLocalDataSource): IUserRepository {
 
     override fun login(user: User) {

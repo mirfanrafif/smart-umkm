@@ -12,7 +12,6 @@ class SmartLabaActivity : AppCompatActivity() {
         binding = ActivitySmartLabaBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
-        actionBar?.title = "Smart Laba"
     }
 
     override fun onStart() {

@@ -1,10 +1,8 @@
 package com.mirfanrafif.smartumkm.core.datasource.local.preferences
 
 import android.content.Context
-import android.content.SharedPreferences
 import androidx.core.content.edit
 import com.mirfanrafif.smartumkm.core.datasource.local.entity.User
-import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton

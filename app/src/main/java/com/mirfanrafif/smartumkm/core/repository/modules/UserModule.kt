@@ -8,9 +8,11 @@ import com.mirfanrafif.smartumkm.core.repository.user.IUserRepository
 import com.mirfanrafif.smartumkm.core.repository.user.UserRepository
 import dagger.Module
 import dagger.Provides
+import javax.inject.Singleton
 
 @Module
 class UserModule {
+    @Singleton
     @Provides
     fun provideUserPreferences(context: Context): IUserPreferences = UserPreferences(context)
 

@@ -1,4 +1,4 @@
-package com.mirfanrafif.smartumkm.utils
+package com.mirfanrafif.smartumkm.core.di
 
 import javax.inject.Scope
 

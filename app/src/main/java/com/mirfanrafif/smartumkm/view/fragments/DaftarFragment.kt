@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.mirfanrafif.smartumkm.MyApplication
 //import com.mirfanrafif.smartumkm.MyApplication
 import com.mirfanrafif.smartumkm.databinding.FragmentDaftarBinding
 import com.mirfanrafif.smartumkm.utils.ViewModelFactory
@@ -29,15 +30,15 @@ class DaftarFragment : Fragment() {
 
     private lateinit var binding: FragmentDaftarBinding
 
-//    @Inject
-//    lateinit var factory: ViewModelFactory
-//    private val loginViewModel: LoginViewModel by viewModels {
-//        factory
-//    }
+    @Inject
+    lateinit var factory: ViewModelFactory
+    private val loginViewModel: LoginViewModel by viewModels {
+        factory
+    }
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-//        (requireActivity().application as MyApplication).appComponent.inject(this)
+        (requireActivity().application as MyApplication).appComponent.inject(this)
     }
 
     override fun onCreateView(
@@ -52,11 +53,11 @@ class DaftarFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.fabNext.setOnClickListener {
-//            loginViewModel.daftar(
-//                binding.edtNama.text.toString(),
-//                binding.tvUsername.text.toString(),
-//                binding.tvPassword.text.toString()
-//            )
+            loginViewModel.daftar(
+                binding.edtNama.text.toString(),
+                binding.tvUsername.text.toString(),
+                binding.tvPassword.text.toString()
+            )
             val intent = Intent(activity, DashboardActivity::class.java)
             startActivity(intent)
         }

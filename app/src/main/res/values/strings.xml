@@ -8,4 +8,10 @@
     <string name="login_desc">Hello, welcome back\nto our account</string>
     <string name="login_title">Login Account</string>
     <string name="create_account">Create Account</string>
+    <string name="harga">Harga</string>
+    <string name="harian">Harian</string>
+    <string name="bulanan">Bulanan</string>
+    <string name="tahunan">Tahunan</string>
+    <string name="smart_laba">Smart Laba</string>
+    <string name="pemasukan">Pemasukan</string>
 </resources>

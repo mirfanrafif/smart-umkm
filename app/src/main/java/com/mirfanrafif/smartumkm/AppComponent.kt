@@ -1,9 +1,9 @@
 package com.mirfanrafif.smartumkm
 
 import com.mirfanrafif.smartumkm.core.CoreComponent
-import com.mirfanrafif.smartumkm.utils.AppScope
+import com.mirfanrafif.smartumkm.core.di.AppScope
+import com.mirfanrafif.smartumkm.core.di.ViewModelModule
 import com.mirfanrafif.smartumkm.view.activities.DashboardActivity
-import com.mirfanrafif.smartumkm.view.activities.LoginActivity
 import com.mirfanrafif.smartumkm.view.fragments.DaftarFragment
 import com.mirfanrafif.smartumkm.view.fragments.LoginFragment
 import dagger.Component
@@ -12,6 +12,9 @@ import dagger.Component
 @Component(
     dependencies = [
         CoreComponent::class
+    ],
+    modules = [
+        ViewModelModule::class
     ]
 )
 interface AppComponent {
