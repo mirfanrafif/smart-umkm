@@ -4,6 +4,7 @@ import com.mirfanrafif.smartumkm.core.CoreComponent
 import com.mirfanrafif.smartumkm.core.di.AppScope
 import com.mirfanrafif.smartumkm.core.di.ViewModelModule
 import com.mirfanrafif.smartumkm.view.activities.DashboardActivity
+import com.mirfanrafif.smartumkm.view.activities.SmartLabaActivity
 import com.mirfanrafif.smartumkm.view.fragments.DaftarFragment
 import com.mirfanrafif.smartumkm.view.fragments.LoginFragment
 import dagger.Component
@@ -28,4 +29,6 @@ interface AppComponent {
     fun inject(fragment: DaftarFragment)
 
     fun inject(activity: DashboardActivity)
+
+    fun inject(activity: SmartLabaActivity)
 }

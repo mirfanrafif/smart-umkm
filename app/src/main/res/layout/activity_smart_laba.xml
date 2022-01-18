@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_grey"
     tools:context=".view.activities.SmartLabaActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -155,7 +156,7 @@
         android:id="@+id/rv_pengeluaran"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
+        android:layout_marginHorizontal="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         tools:listitem="@layout/item_pengeluaran"
         app:layout_constraintStart_toStartOf="parent"
