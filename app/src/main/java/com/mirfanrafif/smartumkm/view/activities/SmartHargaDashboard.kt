@@ -18,6 +18,10 @@ class SmartHargaDashboard : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySmartHargaDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setSupportActionBar(binding.toolbar)
+        binding.imgBack.setOnClickListener {
+            finish()
+        }
     }
 
     override fun onStart() {
