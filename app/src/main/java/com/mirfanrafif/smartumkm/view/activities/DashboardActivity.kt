@@ -1,16 +1,16 @@
 package com.mirfanrafif.smartumkm.view.activities
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import com.mirfanrafif.smartumkm.MyApplication
 import com.mirfanrafif.smartumkm.R
 import com.mirfanrafif.smartumkm.databinding.ActivityDashboardBinding
+import com.mirfanrafif.smartumkm.utils.FiturItem
 import com.mirfanrafif.smartumkm.utils.ViewModelFactory
 import com.mirfanrafif.smartumkm.view.adapters.FiturAdapter
-import com.mirfanrafif.smartumkm.view.adapters.FiturItem
 import com.mirfanrafif.smartumkm.view.viewmodel.DashboardViewModel
 import java.text.SimpleDateFormat
 import java.util.*

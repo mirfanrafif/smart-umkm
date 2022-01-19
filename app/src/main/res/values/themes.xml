@@ -12,7 +12,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowBackground">@color/bg_grey</item>
     </style>
 
     <style name="TextColor" parent="Widget.AppCompat.TextView">
@@ -23,6 +23,8 @@
     <style name="Card" parent="Widget.MaterialComponents.CardView">
         <item name="android:elevation">4dp</item>
         <item name="cardBackgroundColor">@color/white</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
     </style>
 
     <style name="EditText" parent="Widget.AppCompat.EditText">

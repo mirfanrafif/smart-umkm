@@ -1,11 +1,11 @@
 package com.mirfanrafif.smartumkm.view.adapters
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.mirfanrafif.smartumkm.databinding.ItemFiturBinding
+import com.mirfanrafif.smartumkm.utils.FiturItem
 
 class FiturAdapter(private val fiturList: List<FiturItem>) : RecyclerView.Adapter<FiturAdapter.FiturViewHolder>() {
     override fun onCreateViewHolder(
@@ -34,9 +34,3 @@ class FiturAdapter(private val fiturList: List<FiturItem>) : RecyclerView.Adapte
 
     override fun getItemCount(): Int = fiturList.size
 }
-
-data class FiturItem(
-    val nama: String,
-    val gambar: Int,
-    val intent: Intent
-)
