@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartUMKM">
         <activity
+            android:name=".view.activities.SmartHargaDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activities.SmartHargaDashboard"
+            android:exported="false" />
+        <activity
             android:name=".view.activities.SmartModalActivity"
             android:exported="false" />
         <activity

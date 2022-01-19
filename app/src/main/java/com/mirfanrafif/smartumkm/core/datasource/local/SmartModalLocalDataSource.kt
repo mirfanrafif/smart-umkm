@@ -1,4 +1,4 @@
-package com.mirfanrafif.smartumkm.core.datasource
+package com.mirfanrafif.smartumkm.core.datasource.local
 
 import com.mirfanrafif.smartumkm.core.datasource.local.entity.Investasi
 import com.mirfanrafif.smartumkm.core.datasource.local.entity.Kredit
