@@ -3,7 +3,6 @@ package com.mirfanrafif.smartumkm.core.repository.user
 import com.mirfanrafif.smartumkm.core.datasource.local.UserLocalDataSource
 import com.mirfanrafif.smartumkm.core.datasource.local.entity.User
 import javax.inject.Inject
-import javax.inject.Singleton
 
 class UserRepository @Inject constructor (private val local: UserLocalDataSource): IUserRepository {
 

@@ -22,6 +22,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/edt_username"
         android:hint="@string/username"
+        android:inputType="text"
         style="@style/EditText"
         app:layout_constraintTop_toBottomOf="@id/tv_username"
         />

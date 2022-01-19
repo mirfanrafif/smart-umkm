@@ -8,7 +8,7 @@ import com.mirfanrafif.smartumkm.core.datasource.local.entity.Pengeluaran
 import com.mirfanrafif.smartumkm.databinding.ItemPengeluaranBinding
 
 class PengeluaranAdapter(private val listPengeluaran: List<Pengeluaran>): RecyclerView.Adapter<PengeluaranAdapter.PengeluaranViewHolder>() {
-    class PengeluaranViewHolder(private val binding: ItemPengeluaranBinding): RecyclerView.ViewHolder(binding.root) {
+    inner class PengeluaranViewHolder(private val binding: ItemPengeluaranBinding): RecyclerView.ViewHolder(binding.root) {
         fun bind(pengeluaran: Pengeluaran) {
             binding.tvPengeluaranTitle.text = pengeluaran.namaKategori
             binding.textView3.text = pengeluaran.jumlah.toString()
@@ -19,12 +19,12 @@ class PengeluaranAdapter(private val listPengeluaran: List<Pengeluaran>): Recycl
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): PengeluaranAdapter.PengeluaranViewHolder {
+    ): PengeluaranViewHolder {
         val binding = ItemPengeluaranBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return PengeluaranViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: PengeluaranAdapter.PengeluaranViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: PengeluaranViewHolder, position: Int) {
         holder.bind(listPengeluaran[position])
     }
 

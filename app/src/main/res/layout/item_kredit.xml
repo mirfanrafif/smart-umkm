@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_kredit_nama"
         android:fontFamily="@font/poppins_regular"
         android:textColor="?attr/colorOnPrimary"
-        android:textSize="10sp"
+        android:textSize="11sp"
         tools:text="Rp.650.000/bulan" />
 
 

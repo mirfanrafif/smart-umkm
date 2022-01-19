@@ -8,7 +8,7 @@ import com.mirfanrafif.smartumkm.core.datasource.local.entity.Kredit
 import com.mirfanrafif.smartumkm.databinding.ItemKreditBinding
 
 class KreditAdapter(private val kreditList: List<Kredit>): RecyclerView.Adapter<KreditAdapter.KreditViewHolder>() {
-    class KreditViewHolder(private val binding: ItemKreditBinding): RecyclerView.ViewHolder(binding.root) {
+    inner class KreditViewHolder(private val binding: ItemKreditBinding): RecyclerView.ViewHolder(binding.root) {
         fun bind(kredit: Kredit) {
             binding.tvKreditNama.text = kredit.nama
             binding.tvKreditIuran.text = kredit.tagihan.toString()
@@ -19,12 +19,12 @@ class KreditAdapter(private val kreditList: List<Kredit>): RecyclerView.Adapter<
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): KreditAdapter.KreditViewHolder {
+    ): KreditViewHolder {
         val binding = ItemKreditBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return KreditViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: KreditAdapter.KreditViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: KreditViewHolder, position: Int) {
         holder.bind(kreditList[position])
     }
 

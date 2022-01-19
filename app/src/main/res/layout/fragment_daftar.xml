@@ -21,6 +21,7 @@
         android:id="@+id/edt_nama"
         android:hint="@string/complete_name"
         style="@style/EditText"
+        android:inputType="text"
         app:layout_constraintTop_toBottomOf="@id/tv_nama"
         />
 
@@ -40,6 +41,7 @@
         android:id="@+id/edt_username"
         android:hint="@string/username"
         style="@style/EditText"
+        android:inputType="text"
         app:layout_constraintTop_toBottomOf="@id/tv_username"
         />
 
