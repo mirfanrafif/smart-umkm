@@ -1,31 +1,24 @@
 package com.mirfanrafif.smartumkm.view.activities
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.mirfanrafif.smartumkm.MyApplication
 import com.mirfanrafif.smartumkm.R
 import com.mirfanrafif.smartumkm.databinding.ActivitySmartModalBinding
-import com.mirfanrafif.smartumkm.utils.ViewModelFactory
 import com.mirfanrafif.smartumkm.view.adapters.InvestasiAdapter
 import com.mirfanrafif.smartumkm.view.adapters.KreditAdapter
 import com.mirfanrafif.smartumkm.view.viewmodel.SmartModalViewModel
-import javax.inject.Inject
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class SmartModalActivity : AppCompatActivity() {
-    @Inject
-    lateinit var factory: ViewModelFactory
 
-    private val viewModel: SmartModalViewModel by viewModels {
-        factory
-    }
-
+    private val viewModel: SmartModalViewModel by viewModels()
     private lateinit var binding: ActivitySmartModalBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySmartModalBinding.inflate(layoutInflater)
-        (application as MyApplication).appComponent.inject(this)
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
         binding.imgBack.setOnClickListener {

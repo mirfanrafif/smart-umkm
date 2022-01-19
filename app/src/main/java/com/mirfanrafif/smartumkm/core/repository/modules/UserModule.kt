@@ -8,13 +8,17 @@ import com.mirfanrafif.smartumkm.core.repository.user.IUserRepository
 import com.mirfanrafif.smartumkm.core.repository.user.UserRepository
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 @Module
+@InstallIn(SingletonComponent::class)
 class UserModule {
     @Singleton
     @Provides
-    fun provideUserPreferences(context: Context): IUserPreferences = UserPreferences(context)
+    fun provideUserPreferences(@ApplicationContext context: Context): IUserPreferences = UserPreferences(context)
 
     @Provides
     fun provideUserRepository(localDataSource: UserLocalDataSource): IUserRepository = UserRepository(localDataSource)

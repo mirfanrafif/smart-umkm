@@ -8,7 +8,9 @@ import com.mirfanrafif.smartumkm.R
 import com.mirfanrafif.smartumkm.databinding.ActivityLoginBinding
 import com.mirfanrafif.smartumkm.view.fragments.DaftarFragment
 import com.mirfanrafif.smartumkm.view.fragments.LoginFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
     private lateinit var loginFragment: LoginFragment
