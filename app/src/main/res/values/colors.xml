@@ -13,4 +13,6 @@
     <color name="text_grey">#CECECE</color>
     <color name="red_price">#B73131</color>
     <color name="bg_grey">#F6F6F6</color>
+    <color name="dark_blue">#0A1468</color>
+    <color name="darker_blue">#0D134C</color>
 </resources>

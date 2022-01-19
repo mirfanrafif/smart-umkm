@@ -37,7 +37,7 @@ class SmartLabaActivity : AppCompatActivity() {
         super.onStart()
         val pengeluaranList = viewModel.getPengeluaranList()
         val adapter = PengeluaranAdapter(pengeluaranList)
-        binding.rvPengeluaran.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        binding.rvPengeluaran.adapter = adapter
+        binding.content.rvPengeluaran.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        binding.content.rvPengeluaran.adapter = adapter
     }
 }

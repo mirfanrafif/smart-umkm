@@ -2,10 +2,12 @@ package com.mirfanrafif.smartumkm.core.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.mirfanrafif.smartumkm.core.repository.modules.SmartModalModule
 import com.mirfanrafif.smartumkm.utils.ViewModelFactory
 import com.mirfanrafif.smartumkm.view.viewmodel.DashboardViewModel
 import com.mirfanrafif.smartumkm.view.viewmodel.LoginViewModel
 import com.mirfanrafif.smartumkm.view.viewmodel.SmartLabaViewModel
+import com.mirfanrafif.smartumkm.view.viewmodel.SmartModalViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
@@ -27,6 +29,11 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(SmartLabaViewModel::class)
     abstract fun bindSmartLabaViewModel(viewModel: SmartLabaViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(SmartModalViewModel::class)
+    abstract fun bindSmartModalViewModel(viewModel: SmartModalViewModel): ViewModel
 
     @Binds
     abstract fun bindViewModelFactory(factory: ViewModelFactory): ViewModelProvider.Factory

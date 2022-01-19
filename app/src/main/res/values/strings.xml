@@ -16,4 +16,11 @@
     <string name="pemasukan">Pemasukan</string>
     <string name="pengeluaran">Pengeluaran</string>
     <string name="more">More</string>
+    <string name="smart_modal">Smart Modal</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="complete_name">Complete Name</string>
+    <string name="pengajuan_kredit">Pengajuan Kredit</string>
+    <string name="investasi">Investasi</string>
+    <string name="properti">Properti</string>
 </resources>

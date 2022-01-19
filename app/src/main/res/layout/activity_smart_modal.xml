@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.activities.SmartLabaActivity">
+    tools:context=".view.activities.SmartModalActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -30,22 +30,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/smart_laba"
+            android:text="@string/smart_modal"
             android:fontFamily="@font/poppins_regular"
             android:textColor="?attr/colorOnPrimary"/>
     </androidx.appcompat.widget.Toolbar>
-<!--    gambar yang rame itu-->
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
-        <include
-            android:id="@+id/content"
-            layout="@layout/content_smart_laba"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        <include android:id="@+id/content" layout="@layout/content_smart_modal"/>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_blue_rounded"
+    android:padding="10dp"
+    android:layout_marginBottom="16dp"
+    app:layout_constraintTop_toBottomOf="@+id/tv_investasi_title"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/img_investasi"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/house"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/img_investasi"
+        android:text="@string/properti"
+        android:textColor="?attr/colorOnPrimary"
+        android:fontFamily="@font/poppins_regular"
+        android:id="@+id/tv_investasi"
+        android:layout_marginStart="7dp"
+        app:layout_constraintStart_toEndOf="@+id/img_investasi"
+        app:layout_constraintTop_toTopOf="@+id/img_investasi" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bg_orange"
+        android:padding="6dp"
+        android:id="@+id/btn_invest_property_next"
+        android:src="@drawable/ic_baseline_arrow_forward_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

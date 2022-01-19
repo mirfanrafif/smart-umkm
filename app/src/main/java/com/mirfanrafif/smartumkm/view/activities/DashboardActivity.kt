@@ -38,7 +38,8 @@ class DashboardActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         fiturList = mutableListOf(
-            FiturItem("Smart Laba", R.drawable.smart_laba, Intent(this, SmartLabaActivity::class.java))
+            FiturItem("Smart Laba", R.drawable.smart_laba, Intent(this, SmartLabaActivity::class.java)),
+            FiturItem("Smart Modal", R.drawable.smart_modal, Intent(this, SmartModalActivity::class.java))
         )
 
         val user = viewModel.getUser()

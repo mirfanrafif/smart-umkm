@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/bg_grey"
     android:layout_height="match_parent"
     tools:context=".view.activities.DashboardActivity">
 
@@ -25,7 +24,7 @@
         app:layout_constraintStart_toEndOf="@+id/img_profile"
         app:layout_constraintTop_toTopOf="@+id/img_profile"
         android:layout_marginStart="5dp"
-        android:textColor="@color/black"
+        style="@style/TextColor"
         tools:text="Ji Chang Wook" />
 
     <TextView

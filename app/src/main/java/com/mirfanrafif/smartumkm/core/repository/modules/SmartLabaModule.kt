@@ -1,6 +1,6 @@
 package com.mirfanrafif.smartumkm.core.repository.modules
 
-import com.mirfanrafif.smartumkm.core.datasource.local.SmartLabaDataSource
+import com.mirfanrafif.smartumkm.core.datasource.local.SmartLabaLocalDataSource
 import com.mirfanrafif.smartumkm.core.repository.smartlaba.ISmartLabaRepository
 import com.mirfanrafif.smartumkm.core.repository.smartlaba.SmartLabaRepository
 import dagger.Module
@@ -10,8 +10,8 @@ import dagger.Provides
 class SmartLabaModule {
 
     @Provides
-    fun provideSmartLabaDataSource(): SmartLabaDataSource = SmartLabaDataSource()
+    fun provideSmartLabaDataSource(): SmartLabaLocalDataSource = SmartLabaLocalDataSource()
 
     @Provides
-    fun provideSmartLabaRepository(smartLabaDataSource: SmartLabaDataSource): ISmartLabaRepository = SmartLabaRepository(smartLabaDataSource)
+    fun provideSmartLabaRepository(smartLabaLocalDataSource: SmartLabaLocalDataSource): ISmartLabaRepository = SmartLabaRepository(smartLabaLocalDataSource)
 }

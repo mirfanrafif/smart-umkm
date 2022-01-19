@@ -5,8 +5,8 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
-    android:elevation="4dp"
-    android:layout_margin="8dp">
+    style="@style/Card"
+    >
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_height="match_parent"
         android:layout_width="match_parent"
@@ -27,8 +27,8 @@
             android:id="@+id/tv_pengeluaran_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
             android:textSize="10sp"
+            style="@style/TextColor"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/btn_pengeluaran_detail"
             tools:text="Biaya Bahan Baku" />
