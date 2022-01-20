@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragments.SmartAcaraDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_blue_rounded"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_smart_acara_list_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="?attr/colorOnPrimary"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Pelatihan Desain Grafis : Design Kemasan" />
+
+        <ImageView
+            android:id="@+id/img_smart_acara_list"
+            android:layout_width="120dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/tv_smart_acara_list_nama"
+            app:layout_constraintTop_toBottomOf="@+id/tv_smart_acara_list_nama"
+            tools:src="@drawable/desain_kemasan" />
+
+        <TextView
+            android:id="@+id/tv_smart_acara_list_pelaksanaan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_smart_acara_list"
+            app:layout_constraintTop_toTopOf="@+id/img_smart_acara_list"
+            tools:text="@string/pelaksanaan_acara" />
+
+        <TextView
+            android:id="@+id/tv_smart_acara_list_kuota"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_smart_acara_list"
+            app:layout_constraintTop_toBottomOf="@+id/tv_smart_acara_list_pelaksanaan"
+            tools:text="Kuota: 50 orang" />
+
+        <TextView
+            android:id="@+id/tv_smart_acara_list_lokasi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_smart_acara_list"
+            app:layout_constraintTop_toBottomOf="@+id/tv_smart_acara_list_kuota"
+            tools:text="pelatihan dilakukan secara online" />
+
+        <TextView
+            android:id="@+id/tv_smart_acara_detail_deskripsi"
+            style="@style/TextColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/img_smart_acara_list"
+            tools:layout_editor_absoluteX="10dp"
+            tools:text="@string/deskripsi_acara" />
+
+        <TextView
+            android:id="@+id/tv_smart_acara_detail_durasi"
+            style="@style/TextColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_smart_acara_detail_deskripsi"
+            tools:layout_editor_absoluteX="10dp"
+            tools:text="@string/durasi_acara" />
+
+        <TextView
+            android:id="@+id/tv_smart_acara_detail_manfaat"
+            style="@style/TextColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_smart_acara_detail_durasi"
+            tools:text="@string/manfaat_acara" />
+
+        <TextView
+            android:id="@+id/tv_smart_acara_detail_registrasi"
+            style="@style/TextColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_smart_acara_detail_manfaat"
+            tools:text="@string/registrasi_acara" />
+
+        <TextView
+            android:id="@+id/tv_smart_acara_detail_penyelenggara"
+            style="@style/TextColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/tv_smart_acara_detail_registrasi"
+            tools:text="@string/penyelenggara_acara" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_acara_detail_daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/daftar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_blue"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_regular"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

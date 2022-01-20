@@ -26,4 +26,15 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="smart_acara_kategori_rekomendasi">Rekomendasi</string>
+    <string name="lihat_semua">Lihat Semua</string>
+    <string name="deskripsi_acara">Content creation adalah kemampuan dalam membuat dan mengelola konten digital seperti mengelola website, artikel web, desain grafis, video editing dan konten digital lainnya sangat dibutuhkan sebagai media promosi.</string>
+    <string name="durasi_acara"><b>Durasi Pelatihan :</b> \n%1$d Hari</string>
+    <string name="manfaat_acara"><b>Manfaat Pelatihan:</b>\n%1$s</string>
+    <string name="registrasi_acara"><b>Registrasi:</b>\n%1$s</string>
+    <string name="penyelenggara_acara"><b>Diselenggarakan oleh:</b>\n%1$s</string>
+    <string name="daftar">Daftar</string>
+    <string name="pelaksanaan_acara">Pelaksanaan: %1$s - %2$s</string>
+    <string name="kuota">Kuota: %1$s orang</string>
+    <string name="confirmed_desc">You’ll will get an email along with your booking confirmation</string>
+    <string name="confirmed">Terkonfirmasi</string>
 </resources>

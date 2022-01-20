@@ -27,4 +27,12 @@ class SmartAcaraDashboardViewModel @Inject constructor(private val repository: S
     fun setKeyword(keyword: String) {
         _searchAcaraKeyword.postValue(keyword)
     }
+
+    fun getListAcara(): List<Acara> = repository.getAcara()
+
+    private val selectedAcara: MutableLiveData<Acara> = MutableLiveData()
+    fun setAcara(acara: Acara) {
+        selectedAcara.postValue(acara)
+    }
+    fun getSelectedAcara(): LiveData<Acara> = selectedAcara
 }
