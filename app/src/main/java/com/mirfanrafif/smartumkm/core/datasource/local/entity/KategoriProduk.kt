@@ -4,7 +4,7 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class Kategori(
+data class KategoriProduk(
     val nama: String,
     val deskripsi: String
 ): Parcelable

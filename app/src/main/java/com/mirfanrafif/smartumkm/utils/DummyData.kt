@@ -35,4 +35,52 @@ object DummyData {
         Produk("Mentimun", 1, 8000),
         Produk("Cabai", 1, 20000)
     )
+
+    val dummyKategoriAcara = arrayListOf(
+        KategoriAcara("Mentoring", R.drawable.mentoring),
+        KategoriAcara("Pelatihan", R.drawable.pelatihan),
+        KategoriAcara("Magang", R.drawable.magang)
+    )
+
+    val dummyAcara = arrayListOf(
+        Acara(
+            "Pelatihan Desain Grafis: Design Kemasan",
+            R.drawable.desain_kemasan,
+            "20 Des 21",
+            "27 Des 21",
+            50,
+            "Pelatihan dilakukan secara online",
+            "Content creation adalah kemampuan dalam membuat dan mengelola konten digital seperti mengelola website, artikel web, desain grafis, video editing dan konten digital lainnya sangat dibutuhkan sebagai media promosi.",
+            3,
+            "Pelatihan ini memberikan kepada peserta pemahaman dan pengetahuan yang diperlukan agar dapat melakukan pembuatan dan pengeditan konten digital di media sosial secara lebih baik serta pemahaman bagaimana hak cipta dan lisensi diterapkan.",
+            0,
+            "IniBaru Company"
+        ),
+        Acara(
+            "Pelatihan Content Creator: Media Sosial Sebagai Media Promosi",
+            R.drawable.content_creator,
+            "22 Des 21",
+            "24 Des 21",
+            50,
+            "Pelatihan dilakukan secara online",
+            "Content creation adalah kemampuan dalam membuat dan mengelola konten digital seperti mengelola website, artikel web, desain grafis, video editing dan konten digital lainnya sangat dibutuhkan sebagai media promosi.",
+            3,
+            "Pelatihan ini memberikan kepada peserta pemahaman dan pengetahuan yang diperlukan agar dapat melakukan pembuatan dan pengeditan konten digital di media sosial secara lebih baik serta pemahaman bagaimana hak cipta dan lisensi diterapkan.",
+            0,
+            "IniBaru Company"
+        ),
+        Acara(
+            "Pelatihan Jasa Boga: Manajemen Pemasaran Usaha Jasa Boga",
+            R.drawable.manajemen_pemasaran,
+            "24 Des 21",
+            "29 Des 21",
+            10,
+            "Pelatihan dilakukan secara online",
+            "Content creation adalah kemampuan dalam membuat dan mengelola konten digital seperti mengelola website, artikel web, desain grafis, video editing dan konten digital lainnya sangat dibutuhkan sebagai media promosi.",
+            3,
+            "Pelatihan ini memberikan kepada peserta pemahaman dan pengetahuan yang diperlukan agar dapat melakukan pembuatan dan pengeditan konten digital di media sosial secara lebih baik serta pemahaman bagaimana hak cipta dan lisensi diterapkan.",
+            0,
+            "IniBaru Company"
+        ),
+    )
 }

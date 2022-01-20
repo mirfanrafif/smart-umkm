@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.mirfanrafif.smartumkm.core.datasource.local.entity.Kategori
+import com.mirfanrafif.smartumkm.core.datasource.local.entity.KategoriProduk
 import com.mirfanrafif.smartumkm.core.datasource.local.entity.Produk
 import com.mirfanrafif.smartumkm.databinding.FragmentProdukBinding
 import com.mirfanrafif.smartumkm.view.adapters.ProdukAdapter
@@ -19,13 +19,13 @@ class ProdukFragment : Fragment() {
     private lateinit var binding: FragmentProdukBinding
     private val viewModel: SmartHargaDetailViewModel by viewModels()
     private var produk: ArrayList<Produk>? = null
-    private var kategori: Kategori? = null
+    private var kategoriProduk: KategoriProduk? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments.let {
             produk = it?.getParcelableArrayList(ARG_PRODUK)
-            kategori = it?.getParcelable(ARG_KATEGORI)
+            kategoriProduk = it?.getParcelable(ARG_KATEGORI)
         }
     }
 
@@ -41,8 +41,8 @@ class ProdukFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         //TODO("membuat tabel dan mengisi data")
-        binding.tvKategoriJudul.text = kategori?.nama
-        binding.tvKategoriDesc.text = kategori?.deskripsi
+        binding.tvKategoriJudul.text = kategoriProduk?.nama
+        binding.tvKategoriDesc.text = kategoriProduk?.deskripsi
 
         binding.rvProduk.adapter = ProdukAdapter(viewModel.getListProduk())
         binding.rvProduk.layoutManager = LinearLayoutManager(binding.root.context)
@@ -52,10 +52,10 @@ class ProdukFragment : Fragment() {
         const val ARG_KATEGORI = "kategori"
         const val ARG_PRODUK = "produk"
         @JvmStatic
-        fun newInstance(kategori: Kategori, produk: ArrayList<Produk>) =
+        fun newInstance(kategoriProduk: KategoriProduk, produk: ArrayList<Produk>) =
             ProdukFragment().apply {
                 arguments = Bundle().apply {
-                    putParcelable(ARG_KATEGORI, kategori)
+                    putParcelable(ARG_KATEGORI, kategoriProduk)
                     putParcelableArrayList(ARG_PRODUK, produk)
                 }
             }

@@ -32,7 +32,8 @@ class DashboardActivity : AppCompatActivity() {
         fiturList = mutableListOf(
             FiturItem("Smart Laba", R.drawable.smart_laba, Intent(this, SmartLabaActivity::class.java)),
             FiturItem("Smart Modal", R.drawable.smart_modal, Intent(this, SmartModalActivity::class.java)),
-            FiturItem("Smart Harga", R.drawable.smart_harga, Intent(this, SmartHargaDashboard::class.java))
+            FiturItem("Smart Harga", R.drawable.smart_harga, Intent(this, SmartHargaDashboardActivity::class.java)),
+            FiturItem("Smart Acara", R.drawable.smart_acara, Intent(this, SmartAcaraDashboardActivity::class.java))
         )
 
         val user = viewModel.getUser()

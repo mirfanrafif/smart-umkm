@@ -10,7 +10,7 @@ import com.mirfanrafif.smartumkm.view.viewmodel.SmartHargaDashboardViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class SmartHargaDashboard : AppCompatActivity() {
+class SmartHargaDashboardActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySmartHargaDashboardBinding
     private val viewModel: SmartHargaDashboardViewModel by viewModels()
 
