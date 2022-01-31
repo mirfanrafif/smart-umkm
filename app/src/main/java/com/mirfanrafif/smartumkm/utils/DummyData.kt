@@ -2,8 +2,26 @@ package com.mirfanrafif.smartumkm.utils
 
 import com.mirfanrafif.smartumkm.R
 import com.mirfanrafif.smartumkm.core.datasource.local.entity.*
+import com.mirfanrafif.smartumkm.core.datasource.local.preferences.Harga
 
 object DummyData {
+    val dummyHarga = arrayListOf(
+        Harga("Pasar Anyer Bahari", 31000, "Sama"),
+        Harga("Pasar Bahariharjo", 31000, "Sama"),
+        Harga("Pasar Cempaka", 30500, "Sama"),
+        Harga("Pasar Cibubur", 32000, "Sama"),
+        Harga("Pasar Cijantung", 32500, "Sama"),
+        Harga("Pasar Cilama", 35000, "Sama"),
+        Harga("Pasar Cipete", 33000, "Sama"),
+        Harga("Pasar Cipete Putih", 30000, "Sama"),
+        Harga("Pasar Ciplak", 35000, "Sama"),
+        Harga("Pasar Glodok", 33000, "Sama"),
+        Harga("Pasar Gondangdia", 34000, "Sama"),
+        Harga("Pasar Grogol", 35000, "Sama"),
+        Harga("Pasar Grogolan", 33000, "Sama"),
+        Harga("Pasar Induk Kramat Jati", 30000, "Sama"),
+        Harga("Pasar Jatinegara ", 29500, "Sama"),
+    )
     val dummyPengeluaran = arrayListOf(
         Pengeluaran("Biaya Bahan Baku", R.drawable.bahan_baku, 650000),
         Pengeluaran("Biaya Transportasi", R.drawable.transportasi, 900000),
@@ -83,4 +101,13 @@ object DummyData {
             "IniBaru Company"
         ),
     )
+
+    val dummySmartPasarBarang = arrayListOf(
+        Barang("Bawang", R.drawable.bawang_merah, "Bawang Merah", 32000, "Pasar Cempaka Putih"),
+        Barang("Cabai", R.drawable.cabai_merah, "Cabai Merah", 38000, "Pasar Cibubur"),
+        Barang("Bawang", R.drawable.bawang_putih, "Bawang Putih", 30000, "Pasar Jatinegara"),
+        Barang("Beras", R.drawable.beras, "Beras IR 42/Pera", 12000, "Pasar Glondok"),
+    )
+
+
 }

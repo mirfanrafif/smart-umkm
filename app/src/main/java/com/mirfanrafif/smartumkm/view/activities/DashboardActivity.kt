@@ -33,7 +33,8 @@ class DashboardActivity : AppCompatActivity() {
             FiturItem("Smart Laba", R.drawable.smart_laba, Intent(this, SmartLabaActivity::class.java)),
             FiturItem("Smart Modal", R.drawable.smart_modal, Intent(this, SmartModalActivity::class.java)),
             FiturItem("Smart Harga", R.drawable.smart_harga, Intent(this, SmartHargaDashboardActivity::class.java)),
-            FiturItem("Smart Acara", R.drawable.smart_acara, Intent(this, SmartAcaraDashboardActivity::class.java))
+            FiturItem("Smart Acara", R.drawable.smart_acara, Intent(this, SmartAcaraDashboardActivity::class.java)),
+            FiturItem("Smart Pasar", R.drawable.smart_pasar, Intent(this, SmartPasarActivity::class.java))
         )
 
         val user = viewModel.getUser()

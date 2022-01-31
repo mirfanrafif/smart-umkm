@@ -37,4 +37,5 @@
     <string name="kuota">Kuota: %1$s orang</string>
     <string name="confirmed_desc">You’ll will get an email along with your booking confirmation</string>
     <string name="confirmed">Terkonfirmasi</string>
+    <string name="smart_pasar">Smart Pasar</string>
 </resources>

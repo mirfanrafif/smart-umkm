@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".view.activities.SmartPasarDetailActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                app:tint="@color/white"
+                android:padding="12dp"
+                android:id="@+id/img_back"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/smart_pasar"
+                android:id="@+id/tv_toolbar_title"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="?attr/colorOnPrimary"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/tv_smart_pasar_detail_date"
+            style="@style/TextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/smart_pasar_date_bg"
+            android:paddingHorizontal="23dp"
+            android:paddingVertical="5dp"
+            android:textSize="10sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:text="20 Januari 2022" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/bg_blue_rounded"
+            android:padding="16dp"
+            android:id="@+id/cl_harga"
+            app:layout_constraintTop_toBottomOf="@+id/tv_smart_pasar_detail_date"
+            tools:layout_editor_absoluteX="196dp">
+
+            <TextView
+                android:id="@+id/tv_terendah_label"
+                style="@style/TextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tertinggi"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_smart_harga_detail_terendah_harga"
+                style="@style/TextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorOnPrimary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tertinggi_label"
+                tools:text="Rp. 38.000/kg" />
+
+            <TextView
+                android:id="@+id/tv_smart_pasar_terendah_lokasi"
+                style="@style/TextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_location_on_24"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_smart_harga_detail_terendah_harga"
+                app:layout_constraintTop_toBottomOf="@+id/tv_smart_harga_detail_terendah_harga"
+                tools:text="Pasar Senen" />
+
+            <TextView
+                android:id="@+id/tv_tertinggi_label"
+                style="@style/TextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tertinggi"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_smart_harga_detail_tertinggi_harga"
+                style="@style/TextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorOnPrimary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tertinggi_label"
+                tools:text="Rp. 38.000/kg" />
+
+            <TextView
+                android:id="@+id/tv_smart_pasar_tertinggi_lokasi"
+                style="@style/TextColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_location_on_24"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_smart_harga_detail_tertinggi_harga"
+                app:layout_constraintTop_toBottomOf="@+id/tv_smart_harga_detail_tertinggi_harga"
+                tools:text="Pasar Senen" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/smart_pasar_detail_gambar_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/cl_harga"
+            android:id="@+id/img_smart_pasar_detail_barang"
+            android:layout_marginTop="-30dp"
+            tools:src="@drawable/cabai_merah" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_smart_pasar_harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_harga"
+            tools:listitem="@layout/item_smart_pasar_detail_harga"
+            tools:itemCount="30"
+            tools:layout_editor_absoluteX="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

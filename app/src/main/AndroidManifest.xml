@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartUMKM">
         <activity
+            android:name=".view.activities.SmartPasarDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activities.SmartPasarActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.activities.SmartAcaraDashboardActivity"
             android:exported="false" />
         <activity
